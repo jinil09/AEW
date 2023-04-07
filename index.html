@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp" ng-controller="mycontroller">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Eng Works</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="Style_Index.css">
+
+    <script src="angular.min.js"></script>
+
+    <script src="main.js"></script>
+
+    
+        
+</head>
+<body>
+
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-magic"></i>AEW</a>
+    
+        <div class="fas fa-bars"></div>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Bill-List">Billing</a></li>
+                <li><a href="#soparicutting">Sopari-Cutting</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    
+    </header>
+    <!-- -----------------Home starts-------------- -->
+
+
+    <section id="Home" class="home">
+        <h1 class="banner">ASHOK ENG WORK</h1>
+        <h3 class="slogen">The Backbone of Your Machines, crafted with excellence in every part</h3>
+
+    </section>
+    <!-- ----------------Home Ends--------------------- -->
+
+    <!-- ----------------About Section starts -->
+
+
+    <section id="about" class="about">
+
+        <h1 class="heading">About</h1>
+        <div class="row">
+            <div class="content">
+                <h3>ASHOK ENGINEERING WORKS</h3>
+                <p>Hi there! I'm Jinil Prajapati, a web developer and student. I have a passion for creating intuitive, visually appealing websites that offer a seamless user experience. With a strong foundation in HTML, CSS, JavaScript and other web technologies, I have hands-on experience building responsive websites and integrating with APIs. As a student, I'm always up-to-date on the latest trends and technologies in web development. In my free time, I love exploring new tech and working on side projects. Thanks for visiting my website, feel free to reach out!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quae, numquam provident, corrupti consequuntur aut quia culpa esse vel voluptatibus natus, porro sapiente quam vitae qui. Aliquid officiis ullam alias impedit, delectus reiciendis natus dicta cupiditate sunt labore. Accusamus sed iste sequi vero aspernatur esse possimus eum perferendis, adipisci nihil placeat aperiam doloribus voluptate, velit, porro repellendus quisquam cumque a! Delectus, voluptas numquam amet dolor incidunt sint voluptatibus dolorem necessitatibus beatae velit veritatis sapiente iste ex, omnis hic! Nemo, ipsam accusamus optio eius facilis, voluptatum aliquam quos eligendi nam enim adipisci tenetur non rem exercitationem. Error perspiciatis eveniet qui sapiente nihil, odit illo, dignissimos eius autem distinctio numquam facilis molestias pariatur magni. Dicta facere maiores autem consequatur sequi!</p>
+                <a href="#"><button class="btn">Read More</button></a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ----------------About Section End -->
+
+<section id="Bill-List">
+        <section id="passwordsec">
+            <input id="pass" type="password" placeholder="Please Enter Password">
+            <button onclick="passFun()">Enter</button>
+        </section>
+
+        <section class="mainSec" id="mainSection">
+
+            <div class="inputs">
+                <input type="text" ng-model="searchitem" placeholder="Search Here...">
+                <a href="#pree">Click Here</a>
+            </div>
+            
+            <div class="Vtab">
+                <table border="2px">
+
+                    <tr>
+                        <th class="htt1">Item</th>
+                        <th class="htt2">Price</th>
+                        <th class="htt3">Add Item</th>
+                    </tr>
+                    
+                    <tr ng-repeat="item in itemList | filter:searchitem">
+
+                        <td class="it1">{{item.name}}</td>
+                        <td class="it2">{{item.price}}</td>
+                        
+                        <td class="tbtn"><button ng-click="addItem(item)" class="btnadd">AddItem</button></td>
+                    </tr>
+
+                    
+                </table>
+            </div>
+
+        
+
+        
+        <div class="preViewS" id="pree">
+            <div class="Vtab">
+                <table class="tabP" border="2px">
+
+                    <tr>
+                        <th class="htt11">Item</th>
+                        <th class="htt11">Price</th>
+                        
+                    </tr>
+
+                    <tr ng-repeat="preItem in previewList">
+
+                        <td class="itt1">{{preItem.name}}</td>
+                        <td class="itt1">{{preItem.price}}</td>
+                        <td class="cptt1"><button class="copybtn" ng-click="copyItem(preItem.name)">Copy</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+    
+</section>   
+
+<!-- -------------------Sopari cutting machine -->
+
+<section id="soparicutting" class="sopC">
+
+    <p>This page is Currently working on, So if you have any error or problem then contact <b>Jinil Prajapati</b></p>
+
+</section>
+
+<!-- ---------------------------------------- -->
+<footer>
+    Copyright @ 2023 || Making By Jinil Prajapati
+</footer>
+</body>
+</html>

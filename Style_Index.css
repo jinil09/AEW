@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    transition: all 0.5s linear;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: black;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.header .logo i{
+    padding: 0 .5rem;
+}
+
+.header .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .navbar ul li{
+    margin: 0 1.5rem;
+}
+
+.header .navbar ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.header .navbar ul li a:hover{
+    color: #ccc;
+}
+
+.header .fa-bars{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+
+/* --------------Home-------------------- */
+
+
+
+
+/* .home-main h1{
+    font-size: 10rem;
+    font-weight: bolder;
+    color: #d46414f8;
+    background: -webkit-linear-gradient(42deg,#52f755,#f6b724,#ce4b0e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.home .banner:hover{
+    letter-spacing: 4px;
+    transition: 1s;
+}
+
+/* .home-main h3{
+    color: #dcd0d0;
+    font-size: 2rem;
+} */
+/* --------- */
+
+.home{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(mechanical-engineering-gbbb83549b_1920.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
+}
+
+.home .banner{
+    font-size: 8rem;
+    font-weight: bolder;
+    color: #d46414f8;
+    background: -webkit-linear-gradient(42deg,#52f755,#f6b724,#ce4b0e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3); */
+}
+
+.home .slogen{
+    color: #eee;
+    font-size: 2rem;
+    font-weight:400;
+}
+
+/* ----------------About------------------ */
+
+
+.about{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(transparent, rgba(0,0,0,1.5)), url(micromontage-g3d04bea0e_1920.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.heading{
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 5rem;
+    color: white;
+    position: relative;
+    letter-spacing: 0.3rem;
+}
+
+.heading::before, .heading::after{
+    content: '';
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top: .4rem solid #000000;
+    border-left: .4rem solid #000000;
+}
+
+.heading::before{
+    top: 5.8rem;
+    left: -2rem;
+}
+
+.heading::after{
+    bottom: -.5rem;
+    right: -2rem;
+    transform:  rotate(180deg);
+}
+
+.about .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4rem;
+    margin-top: 2.3rem;
+}
+
+.about .row .content{
+    text-align: left;
+    padding-right: 3rem;
+}
+.about .row .content h3{
+    font-size: 5rem;             
+    font-weight: bolder;
+    color: #d46414f8;
+    background: -webkit-linear-gradient(42deg,#f6b724,#ce4b0e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .row .content p{
+    font-size: 2rem;
+    color: #c0bdbd;
+    padding: 1rem 0;
+}
+
+.about::before , .about::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.about::before{
+    height: 50rem;
+    width: 50rem;
+    background: #ccc;
+    bottom: -10rem;
+    left: -10rem;
+}
+
+.about::after{
+    height: 60rem;
+    width: 60rem;
+    background: #6C5CE7;
+    top: -10rem;
+    right: -10rem;
+}
+
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    background: #6C5CE7;
+    color: #fff;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover{
+    opacity: .8;
+    letter-spacing: .1rem;
+}
+
+.content{
+    padding-bottom: 2rem;
+}
+
+
+/* ---------------Billing-------------------- */
+.mainSec{
+    background-color: rgb(235, 235, 239);
+    padding-bottom: 5rem;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.inputs a{
+    text-decoration: none;
+    color: Red;
+    font-size: 2rem;
+    padding-left: 5px;
+    font-weight: bold   ;
+}
+
+.inputs input{
+    padding: 0.3rem;
+    padding-left: 10px;
+    font-size: 2rem;
+    border-radius: 15px;
+    border-color: rgb(2, 11, 18);
+}
+
+.Vtab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.Vtab table{
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+
+.btnadd{
+    width: auto;
+    height: auto;
+    padding: 0.2rem;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(13, 210, 13);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btnadd:focus{
+    opacity: 0.6;
+}
+
+.tbtn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.it1{
+    border-radius: 3px;
+    padding-left:5px ;
+    font-size: 1.5rem;
+}
+
+.it2{
+    border-radius: 3px;
+    text-align: center;
+    padding: 0 6px;
+    font-size: 1.5rem;
+}
+
+.htt1{
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+.htt2{
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+.htt3{
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+/* ---------------------- */
+
+.preViewS{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    background-color: black;
+    height: auto;
+    border: none;
+    border-radius: 30px;
+    margin-top: 5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+    /* margin-bottom: 5rem; */
+}
+
+
+.itt1{
+    border-radius: 3px;
+    padding:10px;
+    font-size: 1.5rem;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.htt11{
+    background-color: rgb(31, 29, 29);
+    color: white;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 1.7rem;
+}
+
+.tabP{
+    border-color: rgb(244, 243, 242);
+    background-color: rgb(243, 242, 241);
+}
+
+.cptt1{
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.copybtn{
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.copybtn:hover{
+    box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.7);
+    font-weight: bolder;
+}
+
+.copybtn:focus{
+    background-color: rgb(249, 249, 6);
+    color: black;
+    padding: 5px;
+    font-size: large;
+}
+
+
+
+/* ----------------------- */
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* ------------------Password--------- */
+
+#mainSection{
+    display: none;
+}
+
+#passwordsec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#passwordsec input{
+    padding: 0.4rem;
+    font-size: large;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#passwordsec button{
+    width: auto;
+    height: auto;
+    padding: 0.6rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.8rem;
+    background-color: rgb(55, 55, 248);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#passwordsec button:hover{
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+#passwordsec button:focus{
+    opacity: 0.6;
+}
+
+/* -------------------Sopari cutting-------------- */
+
+.sopC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sopC p{
+    color: red;
+    font-size: medium;
+    text-align: center;
+}
+
+
+
+/* ------------------------ */
+
+@media (max-width:768px){
+    html{
+        font-size: 60%;
+    }
+
+    .header .fa-bars{
+        display: block;
+        /* ............ */
+        position: absolute;
+        right: 25px;
+    }
+
+    .header .navbar{
+        position: fixed;
+        top: -120%;
+        left: 0;
+        height: auto;
+        width: 100%;
+        z-index: 1000;
+        border-top: .1rem solid rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+    }
+
+    .header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .header .navbar ul li{
+        margin: 1rem 0;
+    }
+
+    .header .navbar ul li a{
+        font-size: 2.4rem;
+        color: #444;
+    }
+
+    .header .fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .nav-toggle{
+        top: 5.8rem;
+    }
+
+    .home .banner{
+        font-size: 4.5rem;
+    }
+
+    .home .slogen{
+        font-size: 2rem;
+    }
+
+    .about .row{
+        flex-flow: column-reverse;
+        padding: 0 2rem;
+    }
+    
+    .about .row .images img{
+        width: 100vw;
+    }
+
+    .preViewS{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .itt1{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .htt11{
+        font-size: 1.3;
+    }
+
+    .Vtab{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
